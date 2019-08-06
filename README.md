@@ -94,8 +94,21 @@ If you encounter any errors, enable debug output:
 s3fs mybucket /path/to/mountpoint -o passwd_file=${HOME}/.passwd-s3fs -o url=http://s3.didiyunapi.com -o use_path_request_style -o dbglevel=info -f -o curldbg
 ```
 
+umount
+--------
+- umount directory
+
+```
+sudo umount /path/to/mountpoint
+```
+
+if you can not umount directory, you can try this command
+```
+sudo umount -l /home/ec2-user/s3mnt
+```
+
 Advanced settings
------------
+-------------
 - You can add the '-o f2 -o allow_other -o umask=000' parameters to let anyone has the permission of the mount directory
 
 Limitations
