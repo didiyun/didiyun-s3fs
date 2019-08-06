@@ -1,15 +1,15 @@
 #! /bin/sh
 
-# This file is part of S3FS.
+# This file is part of didiyun-s3fs.
 # 
 # Copyright 2009, 2010 Free Software Foundation, Inc.
 # 
-# S3FS is free software: you can redistribute it and/or modify
+# didiyun-s3fs is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or (at
 # your option) any later version.
 # 
-# S3FS is distributed in the hope that it will be useful, but
+# didiyun-s3fs is distributed in the hope that it will be useful, but
 # WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 # General Public License for more details.

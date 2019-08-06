@@ -58,8 +58,10 @@ Keep in mind using the pre-built packages when available.
    ./autogen.sh
    ./configure
    make
+   # if you do not want to install, don't execute the following command
    sudo make install
    ```
+4. the binary is in src directory
 
 Run didiyun-s3fs
 --------
@@ -80,16 +82,16 @@ chmod 600 ${HOME}/.passwd-s3fs
 Example
 --------
 
-Run didiyun-s3fs with an existing bucket `mybucket` and directory `/path/to/mountpoint`:
+Run s3fs with an existing bucket `mybucket` and directory `/path/to/mountpoint`:
 
 ```
-didiyun-s3fs mybucket /path/to/mountpoint -o passwd_file=${HOME}/.passwd-s3fs -o url=http://s3.didiyunapi.com -o use_path_request_style
+s3fs mybucket /path/to/mountpoint -o passwd_file=${HOME}/.passwd-s3fs -o url=http://s3.didiyunapi.com -o use_path_request_style
 ```
 
 If you encounter any errors, enable debug output:
 
 ```
-didiyun-s3fs mybucket /path/to/mountpoint -o passwd_file=${HOME}/.passwd-s3fs -o url=http://s3.didiyunapi.com -o use_path_request_style -o dbglevel=info -f -o curldbg
+s3fs mybucket /path/to/mountpoint -o passwd_file=${HOME}/.passwd-s3fs -o url=http://s3.didiyunapi.com -o use_path_request_style -o dbglevel=info -f -o curldbg
 ```
 
 Advanced settings
